@@ -1,10 +1,10 @@
 % Sample data for a candlestick chart
 % Replace this with your own data
-openPrices = [100, 110, 115, 105, 120];
-closePrices = [105, 112, 118, 107, 119];
-highPrices = [115, 120, 125, 115, 125];
-lowPrices = [95, 105, 110, 100, 110];
-dates = 1:5; % x-axis representing time
+openPrices = [100, 110, 115, 105, 120] ';
+closePrices = [105, 112, 118, 107, 119] ';
+highPrices = [115, 120, 125, 115, 125] ';
+lowPrices = [95, 105, 110, 100, 110] ' ;
+dates = [1,2,3,4,5] ' ; % x-axis representing time
 
 % Create a figure
 figure;

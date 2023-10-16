@@ -71,7 +71,7 @@ for i in range(35):
 e_time_dc1 = time.time()
 
 
-
+# Dynamic programming 
 s_time_dp = time.time()
 for i in range(350):
     start_time_dp = time.time()
