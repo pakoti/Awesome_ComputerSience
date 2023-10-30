@@ -13,7 +13,7 @@ To summarize, the divide and conquer approach has exponential time complexity, w
 
 
 # devide and conquer
-
+```python
     def fibonacci(n):
         if n <= 1:
             return n
@@ -22,10 +22,10 @@ To summarize, the divide and conquer approach has exponential time complexity, w
 
     # Example usage
     print(fibonacci(6)) # Output: 8
-
+```
 
 # dynamic programming 
-
+```python
     def fibonacci(n):
         fib = [0, 1]
         for i in range(2, n+1):
@@ -34,7 +34,7 @@ To summarize, the divide and conquer approach has exponential time complexity, w
 
     # Example usage
     print(fibonacci(6)) # Output: 8
-
+```
 # Merge Sort Algorithm without using memory
 Mergesort is an inherently memory-intensive algorithm because it relies on creating new arrays to hold sublists during the merging process. It's not practical to implement a true "in-place" mergesort algorithm in Python that doesn't use any extra memory for sublists.
 
