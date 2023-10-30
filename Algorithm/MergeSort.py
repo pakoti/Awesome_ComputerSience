@@ -25,6 +25,7 @@ def merge_sort(arr):
     return result
 
 # Example usage
-my_list = [3, 6, 8, 10, 1, 2, 1]
+my_list = [3, 6, 8, 10, 1, 2, 1,2,50,897,632,4587,22369,7789963]
 sorted_list = merge_sort(my_list)
+#OUTPUT
 print(sorted_list)
