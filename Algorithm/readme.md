@@ -1,4 +1,5 @@
 
+# Fibonacci sequence 
 The Fibonacci sequence is a series of numbers in which each number is the sum of the two preceding numbers. The sequence starts with 0, 1, 1, 2, 3, 5, 8, 13, 21, and so on. There are two popular approaches to solve the Fibonacci sequence problem: divide and conquer and dynamic programming.
 
 Divide and Conquer Approach:
@@ -33,6 +34,47 @@ To summarize, the divide and conquer approach has exponential time complexity, w
 
     # Example usage
     print(fibonacci(6)) # Output: 8
+
+# Merge Sort Algorithm without using memory
+Mergesort is an inherently memory-intensive algorithm because it relies on creating new arrays to hold sublists during the merging process. It's not practical to implement a true "in-place" mergesort algorithm in Python that doesn't use any extra memory for sublists.
+
+However, if your goal is to reduce memory usage, you can modify the standard mergesort algorithm to minimize additional memory allocations by using slicing. Here's a modified version of mergesort that avoids creating new arrays for sublists but still uses some additional memory for slicing:
+
+```python
+    def merge_sort(arr):
+        if len(arr) <= 1:
+            return arr
+
+        mid = len(arr) // 2
+        left = arr[:mid]
+        right = arr[mid:]
+
+        left = merge_sort(left)
+        right = merge_sort(right)
+
+        result = []
+        i = j = 0
+
+        while i < len(left) and j < len(right):
+            if left[i] < right[j]:
+                result.append(left[i])
+                i += 1
+            else:
+                result.append(right[j])
+                j += 1
+
+        result.extend(left[i:])
+        result.extend(right[j:])
+        return result
+
+    # Example usage
+    my_list = [3, 6, 8, 10, 1, 2, 1]
+    sorted_list = merge_sort(my_list)
+    print(sorted_list)
+```
+
+In this modified version, we avoid creating new arrays for sublists by using slicing (`left = arr[:mid]` and `right = arr[mid:]`). However, keep in mind that slicing still consumes some memory, and this approach is not a true "in-place" algorithm. If you need an algorithm that doesn't use any additional memory, you would need to consider other sorting algorithms like Heapsort or in-place variations of Quicksort.
+
 
 
 # Resource
