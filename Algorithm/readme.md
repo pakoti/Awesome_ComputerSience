@@ -14,7 +14,7 @@
 
 مجموعه کامل توابع پیچیدگی را که با توابع درجه دوم محض قابل دسته‌بندی باشند، n²) (θ می‌گویند. 
 
-## Fibonacci sequence 
+## Fibonacci sequence (سری فیبوناچی)
 The Fibonacci sequence is a series of numbers in which each number is the sum of the two preceding numbers. The sequence starts with 0, 1, 1, 2, 3, 5, 8, 13, 21, and so on. There are two popular approaches to solve the Fibonacci sequence problem: divide and conquer and dynamic programming.
 
 Divide and Conquer Approach:
@@ -27,7 +27,7 @@ To summarize, the divide and conquer approach has exponential time complexity, w
 
 
 
-## devide and conquer
+## devide and conquer(تقسیم و غلبه)
 ```python
     def fibonacci(n):
         if n <= 1:
@@ -50,7 +50,7 @@ To summarize, the divide and conquer approach has exponential time complexity, w
     # Example usage
     print(fibonacci(6)) # Output: 8
 ```
-## Merge Sort Algorithm without using memory
+## Merge Sort Algorithm without using memory(الگوریتم مرجسورت بدون استفاده حافظه)
 Mergesort is an inherently memory-intensive algorithm because it relies on creating new arrays to hold sublists during the merging process. It's not practical to implement a true "in-place" mergesort algorithm in Python that doesn't use any extra memory for sublists.
 
 However, if your goal is to reduce memory usage, you can modify the standard mergesort algorithm to minimize additional memory allocations by using slicing. Here's a modified version of mergesort that avoids creating new arrays for sublists but still uses some additional memory for slicing:
@@ -91,6 +91,7 @@ In this modified version, we avoid creating new arrays for sublists by using sli
 
 
 
-# Resources
+# Resources(منابع)
 
 Thanks to chatgpt!
+https://fa.wikipedia.org/wiki/%D8%B7%D8%B1%D8%A7%D8%AD%DB%8C_%D8%A7%D9%84%DA%AF%D9%88%D8%B1%DB%8C%D8%AA%D9%85
