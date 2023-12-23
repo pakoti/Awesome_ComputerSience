@@ -1,3 +1,5 @@
+#in this program it tracks faces and its center.
+
 
 from __future__ import print_function # Python 2/3 compatibility
 import cv2 # Import the OpenCV library

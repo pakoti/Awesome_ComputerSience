@@ -1,3 +1,10 @@
+#with this program you can draw a rectangle around anything you want and then it can tracks it.
+#i dont have the tracking algorithm ...
+
+
+
+
+
 import cv2
 
 # Global variables for mouse events and rectangle selection
