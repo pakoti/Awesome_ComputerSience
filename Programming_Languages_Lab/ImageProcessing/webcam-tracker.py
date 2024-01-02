@@ -4,6 +4,8 @@ import cv2
 
 # Load the image you want to track
 image_to_track = cv2.imread(r'C:\Users\johnsnow\Documents\GitHub\Awesome_ComputerSience\Programming_Languages_Lab\ImageProcessing\image.png')  # Replace 'image_to_track.png' with your image file
+
+#image_to_track = cv2.imread(r'C:\Users\johnsnow\Documents\GitHub\Awesome_ComputerSience\Programming_Languages_Lab\ImageProcessing\green.jpg')  # Replace 'image_to_track.png' with your image file
 gray_image_to_track = cv2.cvtColor(image_to_track, cv2.COLOR_BGR2GRAY)
 
 # Initialize the webcam
